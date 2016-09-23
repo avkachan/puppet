@@ -29,8 +29,4 @@ Vagrant.configure("2") do |config|
 	agent.vm.provision "shell", path: "shell.sh"
 	end
 
-	config.vm.synced_folder "/", "/home/Student/Desktop/AECM/CM_Puppet/exittask",
-        owner:"vagrant", group:"vagrant",
-        create:true
-	
 end
