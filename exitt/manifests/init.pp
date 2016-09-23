@@ -1,13 +1,10 @@
 class exitt {
-	if $::mora == master{
+	if $::hostname == master{
 		include exitt::master
 	}
 
-	elsif $::mora == agent {
+	else $::hostname == agent {
 		include exitt::agent
-	}
-	else {
-		notice('smth'
 	}
 }
 		
