@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 	
         master.vm.provider "virtualbox" do |machine|
 		machine.cpus = 1		
-		machine.memory = 4096
+		machine.memory = 3076
                 machine.name = "master"
                 end
 	master.vm.provision "shell", path: "shell.sh"
@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
 	
 	agent.vm.provider "virtualbox" do |machine|	
 		machine.cpus = 1
-		machine.memory = 1024
+		machine.memory = 512
 		machine.name = "agent"
 		end
 	agent.vm.provision "shell", path: "shell.sh"

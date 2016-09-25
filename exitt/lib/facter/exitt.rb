@@ -1,9 +1,6 @@
 Facter.add(:mora) do
-	setcode do
-	if $::hostname == 'master' 
-		mora = 'master'
-	else  mora = 'agent'
-	
+ setcode do
+  Facter.value(:hostname) == 'master'	
 end
 end	
 

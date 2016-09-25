@@ -1,0 +1,15 @@
+{
+  "name": "puppet-exitt",
+  "version": "0.1.0",
+  "author": "Andrei_Kachan",
+  "summary": "Install Puppet Server & Agent",
+  "license": "Open_source",
+  "source": "https://github.com/avkachan/puppet",
+  "project_page": "https://github.com/avkachan/puppet",
+  "issues_url": "https://github.com/avkachan/puppet",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
